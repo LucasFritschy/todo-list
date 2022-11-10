@@ -8,10 +8,11 @@ export const TodoForm = () => {
 
   const handleAddTodo = () => {
     setTodos([...todos, {
-        id: new Date().getTime(),
-        label: task,
-        checked: false,
-      }]);
+      id: new Date().getTime(),
+      label: task,
+      checked: false,
+    }]);
+    setTask('');
   };
 
   const handleKeyUp = (e) => {
